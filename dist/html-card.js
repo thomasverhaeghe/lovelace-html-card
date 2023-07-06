@@ -82,8 +82,8 @@ class HtmlCard extends HTMLElement {
             });
         }
         if (this._config.title)
-            header = `<div class="card-header" style="padding: 0;"><div class="name">${this._config.title}</div></div>`;
-        this.innerHTML = `<ha-card id="htmlCard" style="padding: 0">${header}<div>${outputContent}</div></ha-card>`;
+            header = `<div class="card-header" style="padding: 0; margin: 0;"><div class="name">${this._config.title}</div></div>`;
+        this.innerHTML = `<ha-card id="htmlCard" style="padding: 0; margin: 0;">${header}<div>${outputContent}</div></ha-card>`;
     }
 
     getCardSize() {
