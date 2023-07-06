@@ -82,7 +82,7 @@ class HtmlCard extends HTMLElement {
             });
         }
         if (this._config.title)
-            header = `<div class="card-header" style="padding: 8px 0 16px 0;"><div class="name">${this._config.title}</div></div>`;
+            header = `<div class="card-header" style="padding: 0;"><div class="name">${this._config.title}</div></div>`;
         this.innerHTML = `<ha-card id="htmlCard" style="padding: 0">${header}<div>${outputContent}</div></ha-card>`;
     }
 
